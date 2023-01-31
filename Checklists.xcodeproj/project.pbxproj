@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		088CBBC329871E5D003D90DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CBBC229871E5D003D90DC /* AppDelegate.swift */; };
 		088CBBC529871E5D003D90DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CBBC429871E5D003D90DC /* SceneDelegate.swift */; };
-		088CBBC729871E5D003D90DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CBBC629871E5D003D90DC /* ViewController.swift */; };
+		088CBBC729871E5D003D90DC /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CBBC629871E5D003D90DC /* ChecklistViewController.swift */; };
 		088CBBCA29871E5D003D90DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088CBBC829871E5D003D90DC /* Main.storyboard */; };
 		088CBBCC29871E5D003D90DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088CBBCB29871E5D003D90DC /* Assets.xcassets */; };
 		088CBBCF29871E5E003D90DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088CBBCD29871E5E003D90DC /* LaunchScreen.storyboard */; };
+		088CBBD729874020003D90DC /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CBBD629874020003D90DC /* ChecklistItem.swift */; };
+		088CBBD9298892F5003D90DC /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CBBD8298892F5003D90DC /* ItemDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		088CBBBF29871E5D003D90DC /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		088CBBC229871E5D003D90DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		088CBBC429871E5D003D90DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		088CBBC629871E5D003D90DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		088CBBC629871E5D003D90DC /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
 		088CBBC929871E5D003D90DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		088CBBCB29871E5D003D90DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		088CBBCE29871E5E003D90DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		088CBBD029871E5E003D90DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		088CBBD629874020003D90DC /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		088CBBD8298892F5003D90DC /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				088CBBC229871E5D003D90DC /* AppDelegate.swift */,
 				088CBBC429871E5D003D90DC /* SceneDelegate.swift */,
-				088CBBC629871E5D003D90DC /* ViewController.swift */,
+				088CBBC629871E5D003D90DC /* ChecklistViewController.swift */,
 				088CBBC829871E5D003D90DC /* Main.storyboard */,
 				088CBBCB29871E5D003D90DC /* Assets.xcassets */,
 				088CBBCD29871E5E003D90DC /* LaunchScreen.storyboard */,
 				088CBBD029871E5E003D90DC /* Info.plist */,
+				088CBBD629874020003D90DC /* ChecklistItem.swift */,
+				088CBBD8298892F5003D90DC /* ItemDetailViewController.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				088CBBC729871E5D003D90DC /* ViewController.swift in Sources */,
+				088CBBD9298892F5003D90DC /* ItemDetailViewController.swift in Sources */,
+				088CBBC729871E5D003D90DC /* ChecklistViewController.swift in Sources */,
 				088CBBC329871E5D003D90DC /* AppDelegate.swift in Sources */,
 				088CBBC529871E5D003D90DC /* SceneDelegate.swift in Sources */,
+				088CBBD729874020003D90DC /* ChecklistItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +300,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,6 +328,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

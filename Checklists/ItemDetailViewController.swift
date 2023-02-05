@@ -20,8 +20,12 @@ protocol AddItemViewControllerDelegate: class {
 }
 
 class ItemDetailViewController: UITableViewController, UITextFieldDelegate {
-    @IBOutlet weak var textField: UITextField!
+    
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
+    @IBOutlet weak var textField: UITextField!
+    //@IBOutlet weak var textField: UITextField!
+    //@IBOutlet weak var doneBarButton: UIBarButtonItem!
+    
     weak var delegate: AddItemViewControllerDelegate!
     var itemToEdit: ChecklistItem?
 
